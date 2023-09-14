@@ -18,6 +18,7 @@ La base de datos se gestiona mediante Mysql.
 # 21648-A-Carlos-Jorge-Gramajo
 
 IMPORTANTE
+Buscar la carpeta baseDatosMysqlTablaPaginaWeb en el .zip del proyecto hay esta la base de datos node_db.sql
 
 1. Iniciar sesión en phpMyAdmin: Accede a tu panel de control de phpMyAdmin.
 2. Crea una base de datos nueva llamada "node_db"
