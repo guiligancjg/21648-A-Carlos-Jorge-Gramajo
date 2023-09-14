@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Argentina Programa 4.0 
 
 ## Trabajo Integrador Final
@@ -13,3 +14,6 @@ Este es un proyecto de blog de noticias que te permite leer y publicar noticias 
 # Información adicional
 Este proyecto utiliza Node.js y Express.js en el lado del servidor.
 La base de datos se gestiona mediante Mysql.
+=======
+# 21648-A-Carlos-Jorge-Gramajo
+>>>>>>> 1962cf76141b64055bc060a2854e9fb185f09c57
