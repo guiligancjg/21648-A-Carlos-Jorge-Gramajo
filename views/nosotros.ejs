@@ -6,7 +6,9 @@
     <title>BlogDeNoticias</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 <body>
 
@@ -14,26 +16,26 @@
 
         <div class="contenedor">
             <div class="barra">
-                <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeNoticias</span></h1>
+                <a class="logo" href="/">
+                    <h1 class="logo__nombre texto-efecto centrar-texto">Blog<span class="logo__bold">DeNoticias</span></h1>
                 </a>
 
                 <nav class="navegacion">
-                    <a href="posts.html" class="navegacion__enlace">Posts</a>
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                    <a href="posts" class="btn navegacion__enlace">Posts</a>
+                    <a href="nosotros" class="btn navegacion__enlace">Nosotros</a>
+                    <a href="contacto" class="btn navegacion__enlace">Contacto</a>
                 </nav>
             </div>
         </div>
 
         <div class="header__texto">
-            <h2 class="no-margin">Descubre el mundo a través de nuestras noticias</h2>
+            <h2 style="font-weight: 700;" class="no-margin">Descubre el mundo a través de nuestras noticias</h2>
             <p class="no-margin">Siempre mantente Informado</p>
         </div>
     </header>
 
     <main class="contenedor">
-        <h3 class="centrar-texto">Sobre Nosotros</h3>
+        <h3 style="margin-top: 4rem; padding-bottom: 2rem;" class="centrar-texto">Sobre Nosotros</h3>
 
         <div class="sobre-nosotros">
             <div class="sobre-nosotros__imagen">
@@ -41,7 +43,7 @@
             </div>
 
             <div class="sobre-nosotros__texto">
-                <p class="no-margin">Somos un equipo apasionado por brindarte las noticias más relevantes y actualizadas de todo el mundo. Nuestro objetivo es mantenerte informado y ofrecerte una perspectiva única de los eventos que están dando forma al mundo.</p>
+                <p>Somos un equipo apasionado por brindarte las noticias más relevantes y actualizadas de todo el mundo. Nuestro objetivo es mantenerte informado y ofrecerte una perspectiva única de los eventos que están dando forma al mundo.</p>
                 <p>En nuestro equipo, contamos con periodistas experimentados, escritores apasionados y expertos en diversos campos, todos comprometidos con la excelencia periodística y la integridad informativa.</p>
                 <p>Gracias por confiar en nosotros como tu fuente de noticias confiable y objetiva. Estamos aquí para servirte y brindarte el mejor contenido informativo posible.</p>
             </div>
@@ -51,19 +53,23 @@
     <footer class="footer">
         <div class="contenedor">
             <div class="barra">
-                <a class="logo" href="index.html">
+                <a class="logo" href="/">
                     <h2 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeNoticias</span></h2>
                 </a>
-
+                <div style="color: #fff; font-weight: 700; text-align: center;">
+                    <div>Campus Virtual EPICA - Argentina Programa 4.0</div>
+                    <div>Comision: 21648-A - Carlos Jorge Gramajo</div>
+                </div>
                 <nav class="navegacion">
-                    <a href="posts.html" class="navegacion__enlace">Posts</a>
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                    <a href="posts" class="btn navegacion__enlace">Posts</a>
+                    <a href="nosotros" class="btn navegacion__enlace">Nosotros</a>
+                    <a href="contacto" class="btn navegacion__enlace">Contacto</a>
                 </nav>
             </div>
         </div>
     </footer>
     
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js' integrity='sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm' crossorigin='anonymous'></script>
     <script src="js/modernizr.js"></script>
 </body>
 </html>

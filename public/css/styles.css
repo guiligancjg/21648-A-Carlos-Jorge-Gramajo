@@ -7,6 +7,7 @@
     --blanco: #ffffff;
     --negro: #000000;
     --azul: #007bff;
+    --azulClaro: #3e92eb;
 }
 html {
     box-sizing: border-box;
@@ -28,6 +29,7 @@ body {
 }
 a {
     text-decoration: none;
+    
 }
 h1, h2, h3, h4 {
     font-family: var(--fuenteHeading);
@@ -51,6 +53,8 @@ img {
 /** Utilidades **/
 .no-margin {
     margin: 0;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
 }
 .no-padding {
     padding: 0;
@@ -70,6 +74,7 @@ img {
     background-position: center center;
    
 }
+
 .header__texto {
    text-align: center;
    color: var(--blanco);
@@ -78,49 +83,29 @@ img {
 
 
 
-@media (min-width: 768px) {
-    .header__texto {
-       margin-top: 9rem;
-    }
-    h2 {
-        font-size: 4rem;
-    }
-    
-}
+
 .barra {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     padding-top: 2.5rem;
 }
 
 
-@media (min-width: 768px) {
-    .barra {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
+
 .logo {
     color: var(--blanco);
     
 }
 .logo__nombre {
     font-weight: 400;
+    color: var(--blanco);
 }
 .logo__bold {
     font-weight: 700;
 }
-@media (min-width: 768px) {
-    .navegacion {
-        display: flex;
-        justify-content: space-around;
-        gap: 2rem;
-    }
 
-
-    .navegacion__enlace:hover{
-        background-color: var(--azul);
-    }
-}
 .navegacion__enlace {
     display: block;
     text-align: center;
@@ -131,45 +116,37 @@ img {
 
 .navegacion__enlace:hover{
     background-color: var(--azul);
+    color: var(--blanco);
 
 }
 
-@media (min-width: 768px) {
-    .contenido-principal {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 4rem;
-    }
-}
+
 
 .entrada {
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
-    border-bottom: 1px solid var(--gris);
+    border-bottom: 1px solid var(--gris); 
     margin-bottom: 2rem;
+    font-size: 2rem;
+    
     
 }
+
 .entrada:last-of-type {
     border: none;
     margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
-    .entrada {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        border-bottom: 1px solid var(--gris);
-        margin-bottom: 2rem;
-        
-    }
-}
+
 
 .sidebar5noticias {
     border-bottom: 1px solid var(--gris);
 }
 
+.sidebar {
+    padding-top: 4rem;
+}
 
 .titulo5 {
     color: var(--gris);
@@ -191,12 +168,7 @@ img {
     border: none;
 }
 
-@media (min-width: 768px) {
-    .boton {
-        display: inline-block;
 
-    }
-}
 .boton:hover {
     cursor: pointer;
 }
@@ -238,40 +210,9 @@ img {
 }
 
 /** Sobre Nosotros **/
-@media (min-width: 768px) {
-    .sobre-nosotros {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
-    }
-}
 
-/** Cursos **/
-.curso {
-    padding: 3rem 0;
-    border-bottom: 1px solid var(--gris);
-}
-@media (min-width: 768px) {
-    .curso {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 2rem;
-    }
-}
-.curso:last-of-type {
-   border: none;
-}
-.curso__label {
-    font-family: var(--fuenteHeading);
-    font-weight: bold;
-}
-.curso__info {
-    font-weight: normal;
-}
-.curso__label,
-.curso__info {
-    font-size: 2rem;
-}
+
+
 
 /** Contacto **/
 .contacto-bg {
@@ -288,14 +229,7 @@ img {
     width: 98%;
 }
 
-@media (min-width: 768px) {
-    .formulario {
-        background-color: var(--blanco);
-        margin: -5rem auto 0 auto;
-        width: 95%;
-        padding: 5rem;
-    }
-}
+
 
 .campo {
     display: flex;
@@ -328,7 +262,7 @@ img {
 }
 
 /* Estilos del formulario */
-.main-section-posts, h2 {
+.main-section-posts {
     flex-basis: 100%;
     margin-bottom: 20px;
     text-align: center;
@@ -368,7 +302,7 @@ button:hover {
 
 /* Estilos de la tabla */
 .table-posts {
-    display: none;
+    display: block;
 }
 
 th, td {
@@ -392,7 +326,107 @@ th {
 }
 
 
+
+
+
+.entrada__contenido {
+    padding: 1rem;
+}
+
+.fecha-color {
+    color: var(--azulClaro);
+   
+    
+}
+
+.tabla-morirEnElIntento{
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem !important;
+}
+/* ************************ */
+
+
 @media (min-width: 768px) {
+    .no-margin {
+        margin: 0;
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .header__texto {
+        text-align: center;
+        color: var(--blanco);
+        margin-top: 9rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+
+
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .navegacion {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+    }
+
+
+    .navegacion__enlace:hover{
+        background-color: var(--azul);
+        color: var(--blanco);
+    
+    }
+
+
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+
+
+    .entrada {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border-bottom: 1px solid var(--gris);
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        
+    }
+
+
+    .boton {
+        display: inline-block;
+
+    }
+    
+
+    .sobre-nosotros {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .curso {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+
+    .formulario {
+        background-color: var(--blanco);
+        margin: -5rem auto 0 auto;
+        width: 95%;
+        padding: 5rem;
+    }
+
     .main-posts {
         display: flex;
         flex-direction: column;
@@ -420,5 +454,88 @@ th {
 
     table {
         width: 100%;
+    }
+
+
+    /* Estilos normales para el texto */
+    .texto-efecto {
+        font-size: 2.5rem;
+        color: var(--blanco); /* Color por defecto */
+        transition: font-size 0.2s, color 0.2s; /* Transición suave para los cambios */
+    }
+    
+    /* Estilos cuando el ratón pasa sobre el texto */
+    .texto-efecto:hover {
+        font-size: 3rem; /* Tamaño aumentado */
+        color: #ffffff; /* Nuevo color */
+    }
+  
+    .logo__nombre {
+        font-weight: 400;
+        color: var(--blanco);
+    }
+
+    .tabla-morirEnElIntento{
+        width: 100%;
+        font-size: 1.8rem !important;
+    }
+}
+
+
+@media (min-width: 1140px) {
+    .enlace__publicaciones {
+        color: var(--negro);
+        padding: 2rem;
+        border-bottom: 1px solid var(--gris);
+        margin-bottom: 2rem;
+        font-size: 2rem;
+
+    }
+
+   
+    .enlace__publicaciones:last-of-type {
+        border: none;
+        margin-bottom: 0;
+    }
+
+
+    .no-margin {
+        margin: 0;
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+    .entrada {
+        display: grid;
+        grid-template-columns: 60% 40%; 
+        gap: 20px; 
+        max-width: 120rem;
+        margin: 0 auto; 
+        padding: 20px;
+        
+    }
+
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    
+    .navegacion__enlace:hover{
+        background-color: var(--azul);
+        color: var(--blanco);
+    
+    }
+
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 2.5rem;
+    }
+    .tabla-morirEnElIntento{
+        width: 100%;
+        font-size: 2rem !important;
     }
 }
